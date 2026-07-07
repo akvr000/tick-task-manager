@@ -12,60 +12,64 @@
 
 # tick
 
-### A minimal matrix task manager built for speed, focus, and clarity.
-
-![React](https://img.shields.io/badge/React-18+-61DAFB?logo=react&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-38BDF8?logo=tailwindcss&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green)
+![React](https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)
 
 </div>
 
 ---
 
-## 📖 Overview
+## 📸 Preview
+
+<p align="center">
+  <img src="./public/tick_preview.webp.png" alt="tick Preview" width="100%">
+</p>
+
+---
+
+# 📖 Overview
 
 **tick** is an ultra-minimal, high-performance task management application designed for speed and clarity.
 
-Instead of multiple pages and unnecessary complexity, **tick** keeps everything inside one focused workspace. Your headers, inputs, counters, and footer remain fixed while only your task matrix scrolls independently, allowing you to stay focused without losing context.
+Instead of cluttering your workspace with multiple pages, **tick** keeps everything inside one focused viewport. Your headers, priority trackers, task inputs, and footer remain fixed while only the task matrix scrolls independently.
 
-The application is lightweight, responsive, and stores everything locally—no backend required.
-
----
-
-## ✨ Features
-
-- ⚡ Persistent synchronization using **localStorage**
-- 📌 Native HTML5 drag-and-drop task reordering
-- 🔊 Built-in square-wave deadline audio alerts (Web Audio API)
-- 🔔 Native browser desktop notifications
-- 📱 Responsive layout for desktop, tablet, and mobile
-- 📋 Matrix-style scrolling task container
-- 🎯 Fixed workspace layout for distraction-free productivity
-- 💾 Automatic data persistence
-- ✏️ Edit existing tasks
-- 🗑️ Delete confirmation modal
-- ⏰ Deadline tracking
-- 🎨 Clean minimal UI
+The application is lightweight, responsive, and works entirely in your browser without requiring a backend.
 
 ---
 
-## 🛠 Tech Stack
+# ✨ Features
 
-| Technology | Usage |
-|------------|-------|
-| React 18+ | UI |
+- ⚡ Persistent Synchronization using **localStorage**
+- 📌 Native HTML5 Drag-and-Drop Reordering
+- 🔊 Loud Square-Wave Deadline Audio Alerts
+- 🔔 Browser Push Notifications
+- 📱 Responsive Mobile-Friendly Layout
+- 📋 Matrix Task Container
+- 🎯 Fixed Workspace Layout
+- 💾 Automatic Local Saving
+- ✏️ Edit Existing Tasks
+- 🗑️ Delete Confirmation Modal
+- ⏰ Deadline Tracking
+
+---
+
+# 🛠 Technology Stack
+
+| Technology | Purpose |
+|------------|---------|
+| React 18+ | UI Development |
 | Vite | Build Tool |
 | Tailwind CSS | Styling |
 | React Hooks | State Management |
 | localStorage API | Data Persistence |
-| Notification API | Desktop Notifications |
-| Web Audio API | Deadline Alerts |
+| Notification API | Browser Notifications |
+| Web Audio API | Audio Alerts |
 | HTML5 Drag & Drop API | Task Reordering |
 
 ---
 
-## 📁 Project Structure
+# 📂 Project Structure
 
 ```text
 tick
@@ -91,6 +95,7 @@ tick
 │   ├── index.css
 │   └── main.jsx
 │
+├── logo.svg
 ├── package.json
 ├── vite.config.js
 ├── eslint.config.js
@@ -100,33 +105,33 @@ tick
 
 ---
 
-## 🚀 Installation
+# 🚀 Installation
 
-### Clone the repository
+Clone the repository.
 
 ```bash
-git clone https://github.com/akvr000/tick.git
+git clone https://github.com/yourusername/tick.git
 ```
 
-### Enter the project directory
+Move into the project folder.
 
 ```bash
 cd tick
 ```
 
-### Install dependencies
+Install dependencies.
 
 ```bash
 npm install
 ```
 
-### Start development server
+Start the development server.
 
 ```bash
 npm run dev
 ```
 
-Visit
+Visit:
 
 ```
 http://localhost:5173
@@ -134,9 +139,9 @@ http://localhost:5173
 
 ---
 
-## 📦 Production Build
+# 📦 Production
 
-Create a production build.
+Build the application.
 
 ```bash
 npm run build
@@ -150,67 +155,60 @@ npm run preview
 
 ---
 
-## 💾 Data Storage
+# 💾 Data Storage
 
-All tasks are stored inside your browser using the **localStorage API**.
+All tasks are automatically saved using the browser's **localStorage API**.
 
-No login.
-No backend.
-No database.
-No internet connection required after loading.
+No backend or database is required.
 
 ---
 
-## 🔔 Notifications
+# 🔔 Notifications
 
-When permission is granted, **tick** sends native browser notifications whenever a task reaches or passes its deadline.
-
----
-
-## 🔊 Audio Alerts
-
-Instead of relying on external sound files, **tick** generates a loud square-wave beep using the **Web Audio API**, ensuring lightweight performance and instant playback.
+With notification permission enabled, **tick** sends native browser desktop notifications whenever a task reaches or exceeds its deadline.
 
 ---
 
-## 📱 Responsive Design
+# 🔊 Audio Alerts
 
-The interface is optimized for:
+The application generates a loud square-wave beep using the **Web Audio API**, eliminating the need for external audio files.
+
+---
+
+# 📱 Responsive Design
+
+Optimized for:
 
 - 💻 Desktop
 - 🖥 Laptop
 - 📱 Mobile
 - 📟 Tablet
 
-The layout remains fixed while only the task matrix scrolls, creating a distraction-free experience across all screen sizes.
+Only the task matrix scrolls while the surrounding interface remains fixed.
 
 ---
 
-## 🎯 Design Philosophy
+# 🎯 Design Philosophy
 
-> Keep it simple.
->
-> Keep it fast.
->
-> Keep your priorities visible.
+> **Stay focused. Stay organized. Stay productive.**
 
-Every design decision in **tick** focuses on reducing distractions while making task management feel immediate and effortless.
+**tick** removes unnecessary distractions so you can concentrate on completing your tasks efficiently.
 
 ---
 
-## 🤝 Contributing
+# 🤝 Contributing
 
-Contributions are welcome!
+Contributions are always welcome.
 
 1. Fork the repository.
-2. Create a feature branch.
+2. Create a new feature branch.
 3. Commit your changes.
-4. Push the branch.
+4. Push your branch.
 5. Open a Pull Request.
 
 ---
 
-## 📄 License
+# 📄 License
 
 Licensed under the **MIT License**.
 
@@ -218,8 +216,8 @@ Licensed under the **MIT License**.
 
 <div align="center">
 
-Made with ❤️ using React, Tailwind CSS & Vite
+Made with ❤️ using React, Vite & Tailwind CSS
 
-⭐ Star this repository if you found it useful!
+⭐ If you like this project, don't forget to leave a star!
 
 </div>
