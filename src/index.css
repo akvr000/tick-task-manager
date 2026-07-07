@@ -1,0 +1,71 @@
+ @import "tailwindcss";
+
+:root {
+  --primary-color: #f0ede8;
+  --secondary-color: #e8ff47;
+  --muted: #6b6b6b;
+  --bg-primary: #0e0e0e;
+  --bg-secondary: #161616;
+  --light-blue: #4a9eff;
+  --light-orange: #E8A847;
+  --light-red: #ff4545;
+}
+
+/* Overwrite variables when .dark-theme class is added to the body/html */
+.dark-theme {
+  --primary-color: #0e0e0e;
+  --muted: #888480;
+  --bg-primary: #f5f4f0;
+  --bg-secondary: #EEECEA;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--primary-color);
+  font-family: monospace;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+/* Wiggle animation for notification bell */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0); }
+  15% { transform: rotate(5deg); }
+  30% { transform: rotate(-5deg); }
+  45% { transform: rotate(3deg); }
+  60% { transform: rotate(-3deg); }
+  75% { transform: rotate(1deg); }
+}
+
+.animate-wiggle {
+  animation: wiggle 0.5s ease infinite;
+}
+
+/* Clean up date picker icon invert for dark styles */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}
+.dark-theme input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0);
+}
+
+/* Custom Scrollbar Styles */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--secondary-color); /* This targets your variable yellow color */
+  border-radius: 9999px;
+}
+
+/* Fallback configuration rules for Firefox */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--secondary-color) var(--bg-secondary);
+}
