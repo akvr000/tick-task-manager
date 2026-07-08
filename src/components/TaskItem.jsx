@@ -36,7 +36,6 @@ export default function TaskItem({ task, onToggleComplete, onEditClick, onDelete
       onDragEnd={handleDragEnd}
       onDragOver={handleDragOver}
       onDrop={handleDrop}
-      /* Removed 'flex-col sm:flex-row' to force a strict inline row layout */
       className={`flex justify-between items-center p-4 bg-[var(--bg-secondary)] border-l-4 cursor-grab active:cursor-grabbing select-none transition-all ${borderColors[task.priority] || 'border-l-transparent'}`}
     >
       {/* Left side: dot selector and text label */}

@@ -11,27 +11,25 @@ export default function TaskList({ tasks, currentTab, setCurrentTab, onToggleCom
   return (
     /* flex-1 min-h-0 flex flex-col lets the wrapper expand without breaking parents */
     <div className="flex-1 min-h-0 flex flex-col gap-4 w-full">
-      
+
       {/* Tab Selectors - Fixed */}
-      {/* Replace the old tab buttons map block with this conditional layout */}
-<div className="flex justify-between gap-2 flex-shrink-0">
-  {['all-tab', 'active-tab', 'done-tab'].map((tab) => {
-    const isActive = currentTab === tab;
-    return (
-      <button
-        key={tab}
-        onClick={() => setCurrentTab(tab)}
-        className={`flex-1 p-2.5 text-sm outline outline-1 outline-[#6b6b6b6d] cursor-pointer font-mono transition-colors ${
-          isActive 
-            ? 'bg-[var(--secondary-color)] text-[#0e0e0e] font-bold outline-[var(--secondary-color)] hover:bg-[var(--secondary-color)] opacity-95' 
-            : 'bg-[var(--bg-secondary)] text-[var(--muted)] hover:bg-[#6b6b6b25]'
-        }`}
-      >
-        {tab === 'all-tab' ? 'All' : tab === 'active-tab' ? 'Active' : 'Done'}
-      </button>
-    );
-  })}
-</div>
+      <div className="flex justify-between gap-2 flex-shrink-0">
+        {['all-tab', 'active-tab', 'done-tab'].map((tab) => {
+          const isActive = currentTab === tab;
+          return (
+            <button
+              key={tab}
+              onClick={() => setCurrentTab(tab)}
+              className={`flex-1 p-2.5 text-sm outline outline-1 outline-[#6b6b6b6d] cursor-pointer font-mono transition-colors ${isActive
+                  ? 'bg-[var(--secondary-color)] text-[#0e0e0e] font-bold outline-[var(--secondary-color)] hover:bg-[var(--secondary-color)] opacity-95'
+                  : 'bg-[var(--bg-secondary)] text-[var(--muted)] hover:bg-[#6b6b6b25]'
+                }`}
+            >
+              {tab === 'all-tab' ? 'All' : tab === 'active-tab' ? 'Active' : 'Done'}
+            </button>
+          );
+        })}
+      </div>
 
       {/* Priority Indicator Row - Fixed */}
       <div className="flex items-center justify-start text-[var(--muted)] text-xs sm:text-sm pb-3 border-b border-[#6b6b6b71] flex-shrink-0">
@@ -49,9 +47,9 @@ export default function TaskList({ tasks, currentTab, setCurrentTab, onToggleCom
             <span className="text-[var(--muted)] italic text-center block my-12">No tasks found here...</span>
           ) : (
             filteredTasks.map(task => (
-              <TaskItem 
-                key={task.id} 
-                task={task} 
+              <TaskItem
+                key={task.id}
+                task={task}
                 onToggleComplete={onToggleComplete}
                 onEditClick={onEditClick}
                 onDeleteTask={onDeleteTask}

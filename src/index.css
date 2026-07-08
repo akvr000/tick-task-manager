@@ -60,7 +60,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--secondary-color); /* This targets your variable yellow color */
+  background: var(--secondary-color);
   border-radius: 9999px;
 }
 
@@ -89,5 +89,5 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input[type="datetime-local"] {
   -webkit-appearance: none;
   appearance: none;
-  min-height: 2.2rem; /* Ensures matching height alignments on phone browsers */
+  min-height: 2.2rem; 
 }
