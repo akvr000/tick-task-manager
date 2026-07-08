@@ -12,6 +12,29 @@
 
 # tick
 
+### A minimal matrix task manager built for speed, focus, and clarity.
+
+<p align="center">
+  <a href="https://tick-task-manager.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🚀_Live_Demo-000000?style=for-the-badge" alt="Live Demo">
+  </a>
+  <a href="https://github.com/akvr000/tick-task-manager" target="_blank">
+    <img src="https://img.shields.io/badge/📂_Source_Code-181717?style=for-the-badge&logo=github&logoColor=white" alt="Source Code">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/akvr000/">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://www.instagram.com/akvr0000/">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram">
+  </a>
+  <a href="https://akvr000.github.io/frontend-portfolio/">
+    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio">
+  </a>
+</p>
+
 ![React](https://img.shields.io/badge/React-18+-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)
@@ -23,7 +46,7 @@
 ## 📸 Preview
 
 <p align="center">
-  <img src="./public/tick_preview.webp.png" alt="tick Preview" width="100%">
+  <img src="./public/tick_preview.png" alt="tick Preview" width="100%">
 </p>
 
 ---
