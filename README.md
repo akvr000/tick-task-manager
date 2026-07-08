@@ -23,7 +23,7 @@
 ## 📸 Preview
 
 <p align="center">
-  <img src="./public/tick_preview.webp.png" alt="tick Preview" width="100%">
+  <img src="./public/tick_preview.webp" alt="tick Preview" width="100%">
 </p>
 
 ---
