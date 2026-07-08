@@ -110,7 +110,7 @@ tick
 Clone the repository.
 
 ```bash
-git clone https://github.com/yourusername/tick.git
+git clone https://github.com/akvr000/tick-task-manager.git
 ```
 
 Move into the project folder.
