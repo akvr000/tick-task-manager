@@ -1,4 +1,3 @@
-import React from 'react';
 import TaskItem from './TaskItem';
 
 export default function TaskList({ tasks, currentTab, setCurrentTab, onToggleComplete, onEditClick, onDeleteTask, onReorderTasks }) {
@@ -9,10 +8,9 @@ export default function TaskList({ tasks, currentTab, setCurrentTab, onToggleCom
   });
 
   return (
-    /* flex-1 min-h-0 flex flex-col lets the wrapper expand without breaking parents */
     <div className="flex-1 min-h-0 flex flex-col gap-4 w-full">
 
-      {/* Tab Selectors - Fixed */}
+      {/* Tab Selectors*/}
       <div className="flex justify-between gap-2 flex-shrink-0">
         {['all-tab', 'active-tab', 'done-tab'].map((tab) => {
           const isActive = currentTab === tab;
@@ -31,7 +29,7 @@ export default function TaskList({ tasks, currentTab, setCurrentTab, onToggleCom
         })}
       </div>
 
-      {/* Priority Indicator Row - Fixed */}
+      {/* Priority Indicator Row*/}
       <div className="flex items-center justify-start text-[var(--muted)] text-xs sm:text-sm pb-3 border-b border-[#6b6b6b71] flex-shrink-0">
         <p className="flex items-center flex-wrap">
           <span className="inline-block w-1.5 h-1.5 rounded-full mx-1.5 bg-[var(--light-red)]"></span>high

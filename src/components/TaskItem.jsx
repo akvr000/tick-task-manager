@@ -1,4 +1,3 @@
-import React from 'react';
 import { EditIcon, DeleteIcon } from '../assets/Icons';
 
 export default function TaskItem({ task, onToggleComplete, onEditClick, onDeleteTask, onReorderTasks }) {
@@ -56,7 +55,6 @@ export default function TaskItem({ task, onToggleComplete, onEditClick, onDelete
           <span className={`text-xs font-mono ${isOverdue ? 'text-[var(--light-red)] font-bold' : 'text-[var(--muted)]'}`}>
             {(() => {
               const d = new Date(task.date);
-              // Outputs MM/DD format like your screenshot
               return `${String(d.getMonth() + 1).padStart(2, '0')}/${String(d.getDate()).padStart(2, '0')}`;
             })()}
           </span>

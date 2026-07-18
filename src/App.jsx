@@ -6,6 +6,7 @@ import EditModal from './components/EditModal';
 import ConfirmModal from './components/ConfirmModal';
 
 export default function App() {
+  // State management for tasks, current tab, theme, editing task, and confirmation modal
   const [tasks, setTasks] = useState(() => {
     const saved = localStorage.getItem('tick_tasks');
     return saved ? JSON.parse(saved) : [];
@@ -136,7 +137,8 @@ export default function App() {
     updatedTasks.splice(targetIndex, 0, removed);
     setTasks(updatedTasks);
   };
-
+  
+  // remainingCount and doneCount are calculated based on the tasks state
   const remainingCount = tasks.filter(t => !t.completed).length;
   const doneCount = tasks.filter(t => t.completed).length;
 

@@ -11,7 +11,6 @@
    --light-red: #ff4545;
  }
 
- /* Overwrite variables when .dark-theme class is added to the body/html */
  .dark-theme {
 
    --primary-color: #0e0e0e;
@@ -85,15 +84,11 @@
    border-radius: 9999px;
  }
 
- /* Fallback configuration rules for Firefox */
  .custom-scrollbar {
    scrollbar-width: thin;
    scrollbar-color: var(--secondary-color) var(--bg-secondary);
  }
 
- /* Add this to your global CSS file to force the calendar icon to appear on mobile devices */
-
- /* 1. Target Webkit Engines (iOS Safari, Android Chrome, etc.) */
  input[type="datetime-local"]::-webkit-calendar-picker-indicator,
  input[type="date"]::-webkit-calendar-picker-indicator {
    display: block !important;
@@ -106,7 +101,6 @@
    height: 16px !important;
  }
 
- /* 2. Remove default iOS override masks that render inputs blank */
  input[type="datetime-local"] {
    -webkit-appearance: none;
    appearance: none;
