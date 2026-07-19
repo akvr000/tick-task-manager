@@ -186,6 +186,7 @@ export default function App() {
 
       <EditModal isOpen={!!editingTask} task={editingTask} onClose={() => setEditingTask(null)} onSave={handleSaveEdit} />
       <ConfirmModal isOpen={isConfirmOpen} onClose={() => setIsConfirmOpen(false)} onConfirm={handleConfirmClearAll} />
+      <Analytics />
     </div>
   );
 }
